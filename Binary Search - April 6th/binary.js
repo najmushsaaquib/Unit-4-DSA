@@ -11,7 +11,7 @@ function searchKey(arr,key) {
     let high = arr.length-1;
 
     while (low <= high) {
-        let mid = low + (high-low)/2
+        let mid = Math.floor(low + (high - low) / 2);
 
         if(key == arr[mid]) return mid;
         else if(key < arr[mid]) high = mid - 1;
